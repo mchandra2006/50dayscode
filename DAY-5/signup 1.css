@@ -1,0 +1,62 @@
+body{
+    background-image: url(https://d2d6mu5qcvgbk5.cloudfront.net/assets/origamiprod/images/novoed-sign-in-background-da24a87ed8.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height:100vh;
+    font-size: 15px;
+}
+
+.signup{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    background-color: lightcyan;
+    margin:100px auto;
+    margin-top: 0;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.signup h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.signup label{
+    justify-content: space-between;
+    text-align: left;
+    display:block;
+    margin-bottom: 5px;
+}
+.signup input{
+    padding: auto;
+    margin:0;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border-style: none;
+    border:1px solid;
+    transition: 0.3s;
+}
+.signup button{
+    cursor: pointer;
+    border-radius: 10px;
+    border:1px solid;
+}
+.signup input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+form .or{
+    text-align: center;
+}
+@media(max-width:1024px){
+    .signup{
+        width:80%;
+    }
+}

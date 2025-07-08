@@ -1,0 +1,82 @@
+body {
+  background-image: url(https://d2d6mu5qcvgbk5.cloudfront.net/assets/origamiprod/images/novoed-sign-in-background-da24a87ed8.jpg);
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signform {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.signform label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signform input {
+  border-radius: 4px;
+  border: solid 1px cornsilk;
+  padding: 8px; /* fixed: 'auto' is invalid */
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: chartreuse;
+  border-radius: 6px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: tomato;
+}
+
+.signform h2 {
+  text-align: center;
+  margin: 0 0 30px;
+}
+/*
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0;
+  font-size: 14px;
+}
+.row .remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.row .forgot {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.row .forgot:hover {
+  text-decoration: underline;
+}*/
+
+@media (max-width: 1024px) {
+  .signform {
+    width: 80%;
+  }
+}
