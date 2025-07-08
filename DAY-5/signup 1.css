@@ -7,17 +7,19 @@ body{
     height:100vh;
     font-size: 15px;
 }
-
+label{
+    text-decoration: underline;
+}
 .signup{
     display:flex;
     flex-direction: column;
     justify-content: center;
     padding:20px;
-    background-color: lightcyan;
+    background-color: aqua;
     margin:100px auto;
     margin-top: 0;
     border-radius: 8px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .signup h2{
     text-align: center;
@@ -54,6 +56,10 @@ body{
 }
 form .or{
     text-align: center;
+}
+.btn{
+    background-color: chartreuse;
+
 }
 @media(max-width:1024px){
     .signup{

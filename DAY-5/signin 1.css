@@ -1,6 +1,6 @@
 body {
   background-image: url(https://d2d6mu5qcvgbk5.cloudfront.net/assets/origamiprod/images/novoed-sign-in-background-da24a87ed8.jpg);
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f3f4f6;
   display: flex;
   justify-content: center;
@@ -13,20 +13,18 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-color: burlywood;
+  background-color: aqua;
   border-radius: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   padding: 20px;
   flex-direction: column;
 }
-
 .signform label {
   text-align: left;
   display: block;
   margin-bottom: 5px;
 }
-
 .signform input {
   border-radius: 4px;
   border: solid 1px cornsilk;
@@ -35,10 +33,12 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
+label{
+    text-decoration: underline;
+}
 .btn {
   background-color: chartreuse;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 8px;
   border: none;
   cursor: pointer;
