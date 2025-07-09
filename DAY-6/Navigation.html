@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merged Navigation Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* Hide radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    nav {
+      background-color: burlywood;
+      overflow: hidden;
+    }
+
+    /* Style labels like links */
+    nav label {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Hover effect */
+    nav label:hover {
+      background-color: black;
+    }
+
+    /* Highlight selected tab */
+    input[type="radio"]:checked + label {
+      background-color: sienna;
+      font-weight: bold;
+    }
+
+    nav::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    #content {
+      background-color: burlywood;
+      padding: 20px;
+      color: black;
+    }
+
+    section {
+      display: none;
+    }
+
+    /* Show selected section */
+    #home:checked ~ #content #home-section,
+    #services:checked ~ #content #services-section,
+    #about:checked ~ #content #about-section,
+    #contact:checked ~ #content #contact-section {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<input type="radio" name="tab" id="home" checked />
+  <label for="home">Home</label>
+  <section>Welcome to the Home page!</section>
+
+  <input type="radio" name="tab" id="services" />
+  <label for="services">Services</label>
+  <section>We offer web design, development, and more.</section>
+
+  <input type="radio" name="tab" id="about" />
+  <label for="about">About</label>
+  <section>We are a creative team focused on web solutions.</section>
+
+  <input type="radio" name="tab" id="contact" />
+  <label for="contact">Contact</label>
+  <section>Contact us at hello@example.com</section>
+</body>
+</html>

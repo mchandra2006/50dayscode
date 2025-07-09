@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic Navigation Bar</title>
+  <style>
+    nav {
+      background-color:burlywood;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav a:hover {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <label for="home">Home</label>
+    <label for="services">Services</label>
+    <label for="about">About</label>
+    <label for="contact">Contact</label>
+  </nav>
+
+  <!-- Content Section Area -->
+  <div id="content">
+    <section id="home-section">
+      <p>Welcome to our Home page. Enjoy your stay!</p>
+    </section>
+    <section id="services-section">
+      <p>We offer web design, development, and consulting services.</p>
+    </section>
+    <section id="about-section">
+      <p>We are a team of dedicated professionals based in Silicon Valley.</p>
+    </section>
+    <section id="contact-section">
+      <p>Contact us via email at hello@example.com or call (123) 456-7890.</p>
+    </section>
+  </div>
+</body>
+</html>

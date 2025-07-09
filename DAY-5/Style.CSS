@@ -23,12 +23,12 @@ header {
   gap: 10px;              
   justify-content: center; 
 }
-.photo-box img {
+  .photo-box img {
   border: 2px solid rgb(71, 58, 129);
   width: 140px;           
   height: 140px;          
-  border-radius: 4px;     
-}
+  border-radius: 4px; 
+  }
 footer {
   word-spacing: 1px;
   letter-spacing: 2px;
@@ -37,4 +37,20 @@ footer {
   background-color: blueviolet;
   text-align: center;
   color: black;
+}
+@keyframes slideIn{
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.photo-box{
+  animation-name: slideIn;
+  animation-duration:5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
 }
